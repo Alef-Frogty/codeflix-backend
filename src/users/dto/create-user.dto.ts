@@ -1,14 +1,12 @@
 export class CreateUserDto {
 
-    Username: string;
+    username: string;
 
-    BirthDate: Date;
+    birthDate: Date;
 
-    Email: string;
+    email: string;
 
-    EmailConfirmed: boolean;
+    password: string;
 
-    Password: string;
-
-    PasswordConfirmed: string;
+    passwordConfirmed: string;
 }

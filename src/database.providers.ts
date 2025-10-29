@@ -5,10 +5,14 @@ import { User } from './users/entities/user.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'sqlite',
-      database: 'test.db',
-      entities: [User],
-      synchronize: true, 
+      type: "postgres",
+    host: "localhost",
+    port: 5433,
+    username: "postgres",
+    password: "1234",
+    database: "postgres",
+    synchronize: true,
+    logging: false, 
     }),
     TypeOrmModule.forFeature([User]),
   ],

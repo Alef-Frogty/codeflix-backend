@@ -8,18 +8,10 @@ export class User {
   @Column({ length: 500 })
   name: string;
 
-  BirthDate: Date;
+  @Column({ length: 500 })
+  email: string;
 
   @Column({ length: 500 })
-  Email: string;
-
-  @Column()
-  EmailConfirmed: boolean;
-
-  @Column({ length: 500 })
-  Password: string;
-
- @Column({ length: 500 })
-     PasswordConfirmed: string;
+  password: string;
 
 }
